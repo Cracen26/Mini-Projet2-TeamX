@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="container text-center" style="background-color: rgb(171, 135, 212);opacity: 80%;border-radius: 10px;margin-top: 10px;">
+        <h3>User List</h3>
+    </div>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Adress</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <th>{{user.id}}</th>
+            <td>{{user.firstname}}</td>
+            <td>{{user.lastname}}</td>
+            <td>{{user.address}}</td>
+          </tr>
+        </tbody>
+    </table>
+</div>
